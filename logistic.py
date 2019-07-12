@@ -79,7 +79,7 @@ def main():
     y = np.asarray(df[df.columns[2]].map(lambda x: x.strip(';')), dtype='float')
 
     # To visualize datasets, uncomment the following line
-    visualize(x, y)
+    # visualize(x, y)
     x_train, x_test, y_train, y_test = split(x, y, 0.2)
 
     learning_rate = 0.01
